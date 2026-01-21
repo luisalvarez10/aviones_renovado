@@ -8,7 +8,9 @@ img {
 	height: 25px;
 }
 
-.texto-debajo{
+
+figcaption {
+	text-align: center;
 	font-weight: bold;
 }
 
