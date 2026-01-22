@@ -26,4 +26,5 @@ a figcaption {
 
 a:visited figcaption {
     color: black !important;
+	text-decoration: none !important;
 }
