@@ -1,30 +1,61 @@
-body{
-	background-color: #9c9c9c;
+/* Configuración general */
+body {
+    background-color: #f0f2f5; /* Un gris muy claro, más limpio */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 40px;
 }
 
-img {
-	display: block;
-	width: 35px;
-	height: 25px;
+h1 {
+    text-align: center;
+    color: #4B5320; /* Tu color militar */
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-h1{
-	font-family: 'Roboto', sans-serif;
-	color: #4B5320;
+/* El contenedor de la cuadrícula */
+.grid-aviones {
+    display: grid;
+    /* Crea 3 columnas iguales. Si la pantalla es pequeña, se ajusta solo */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Espacio entre tarjetas */
+    max-width: 1100px;
+    margin: 0 auto; /* Centra la cuadrícula */
 }
 
+/* Estilo de cada tarjeta */
+.card {
+    background: white;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border-radius: 12px;
+    overflow: hidden; /* Corta la imagen para que respete las esquinas redondeadas */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efecto al pasar el ratón */
+.card:hover {
+    transform: translateY(-10px); /* La tarjeta sube un poco */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Estilo de las imágenes dentro de las tarjetas */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    border-bottom: 3px solid #4B5320;
+}
+
+/* Estilo del texto debajo de la foto */
 figcaption {
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-}
-
-a figcaption {
-    color: black !important;
-    text-decoration: none !important;
-}
-
-a:visited figcaption {
-    color: black !important;
-	text-decoration: none !important;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
 }
