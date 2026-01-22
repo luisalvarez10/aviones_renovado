@@ -19,3 +19,11 @@ figcaption {
 	font-weight: bold;
 }
 
+a figcaption {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+a:visited figcaption {
+    color: black !important;
+}
