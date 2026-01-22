@@ -8,6 +8,9 @@ img {
 	height: 25px;
 }
 
+h1{
+	font-family: 'Roboto', sans-serif;
+}
 
 figcaption {
 	text-align: center;
