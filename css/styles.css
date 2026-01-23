@@ -27,7 +27,7 @@ h1 {
 
 /* Estilo de cada tarjeta */
 .card {
-    background: black;
+    background: white;
     text-decoration: none; /* Quita el subrayado del enlace */
     border-radius: 12px;
     overflow: hidden; /* Corta la imagen para que respete las esquinas redondeadas */
